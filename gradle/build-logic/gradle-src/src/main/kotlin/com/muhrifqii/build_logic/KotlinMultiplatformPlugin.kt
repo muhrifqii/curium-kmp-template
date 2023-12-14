@@ -1,6 +1,7 @@
 package com.muhrifqii.build_logic
 
 import com.muhrifqii.build_logic.project_extensions.configureJavaToolchain
+import com.muhrifqii.build_logic.project_extensions.configureSpotless
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 import org.jetbrains.kotlin.gradle.dsl.KotlinMultiplatformExtension
@@ -71,5 +72,6 @@ class KotlinMultiplatformPlugin : Plugin<Project> {
             }
 
         }
+        configureSpotless()
     }
 }

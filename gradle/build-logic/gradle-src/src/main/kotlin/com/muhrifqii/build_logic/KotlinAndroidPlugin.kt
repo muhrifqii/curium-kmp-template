@@ -1,6 +1,7 @@
 package com.muhrifqii.build_logic
 
 import com.muhrifqii.build_logic.project_extensions.configureJavaToolchain
+import com.muhrifqii.build_logic.project_extensions.configureSpotless
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 
@@ -10,5 +11,6 @@ class KotlinAndroidPlugin : Plugin<Project> {
             apply("org.jetbrains.kotlin.android")
         }
         configureJavaToolchain()
+        configureSpotless()
     }
 }

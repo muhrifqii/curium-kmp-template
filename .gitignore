@@ -234,3 +234,5 @@ xcuserdata/
 **/xcshareddata/WorkspaceSettings.xcsettings
 
 # End of https://www.toptal.com/developers/gitignore/api/kotlin,android,intellij+all,windows,macos,xcode
+
+.kotlin

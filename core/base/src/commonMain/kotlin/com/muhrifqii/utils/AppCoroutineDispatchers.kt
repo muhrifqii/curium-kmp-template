@@ -1,4 +1,4 @@
-package com.muhrifqii.base.apps
+package com.muhrifqii.utils
 
 import kotlinx.coroutines.CoroutineDispatcher
 

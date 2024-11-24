@@ -1,4 +1,4 @@
-package com.muhrifqii.base.apps
+package com.muhrifqii.apps
 
 data class ApplicationInfo(
     val packageName: String,

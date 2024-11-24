@@ -1,4 +1,4 @@
-package com.muhrifqii.base.injects
+package com.muhrifqii.injects
 
 import kotlinx.coroutines.CoroutineScope
 import me.tatarka.inject.annotations.Scope

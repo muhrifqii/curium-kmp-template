@@ -1,6 +1,6 @@
 package com.muhrifqii.logger
 
-import com.muhrifqii.base.injects.ApplicationScope
+import com.muhrifqii.injects.ApplicationScope
 import me.tatarka.inject.annotations.Provides
 
 actual interface LoggerPlatformComponent {

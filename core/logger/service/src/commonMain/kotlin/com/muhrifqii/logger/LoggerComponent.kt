@@ -1,7 +1,7 @@
 package com.muhrifqii.logger
 
-import com.muhrifqii.base.apps.AppInitializer
-import com.muhrifqii.base.injects.ApplicationScope
+import com.muhrifqii.apps.AppInitializer
+import com.muhrifqii.injects.ApplicationScope
 import me.tatarka.inject.annotations.IntoSet
 import me.tatarka.inject.annotations.Provides
 

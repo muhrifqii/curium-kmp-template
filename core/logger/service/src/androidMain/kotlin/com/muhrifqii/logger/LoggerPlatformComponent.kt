@@ -1,8 +1,8 @@
 package com.muhrifqii.logger
 
 import com.google.firebase.crashlytics.FirebaseCrashlytics
-import com.muhrifqii.base.injects.ApplicationScope
-import com.muhrifqii.base.utils.tryWith
+import com.muhrifqii.injects.ApplicationScope
+import com.muhrifqii.utils.tryWith
 import me.tatarka.inject.annotations.Provides
 
 actual interface LoggerPlatformComponent {

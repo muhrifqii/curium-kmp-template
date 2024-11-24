@@ -45,9 +45,14 @@ buildCache {
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 enableFeaturePreview("STABLE_CONFIGURATION_CACHE")
 
-rootProject.name = "kmp-template"
+rootProject.name = "curium-kmp-template"
 include(
     ":core:base:",
     ":core:logger:api",
     ":core:logger:service",
+    ":core:notifications",
+    ":core:preferences",
+    ":core:ui:compose",
+    ":core:ui:resources",
+    ":android-app:app",
 )

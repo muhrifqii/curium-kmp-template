@@ -1,4 +1,4 @@
-package com.muhrifqii.base.utils
+package com.muhrifqii.utils
 
 import kotlinx.coroutines.CancellationException
 

@@ -1,7 +1,7 @@
 package com.muhrifqii.logger.functions
 
 import co.touchlab.crashkios.crashlytics.CrashlyticsKotlin
-import com.muhrifqii.base.utils.tryWith
+import com.muhrifqii.utils.tryWith
 import com.muhrifqii.logger.Logger
 import io.github.aakira.napier.Antilog
 import io.github.aakira.napier.LogLevel

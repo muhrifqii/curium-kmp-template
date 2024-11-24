@@ -2,8 +2,8 @@ package com.muhrifqii.logger
 
 import co.touchlab.crashkios.crashlytics.enableCrashlytics
 import co.touchlab.crashkios.crashlytics.setCrashlyticsUnhandledExceptionHook
-import com.muhrifqii.base.apps.AppInitializer
-import com.muhrifqii.base.injects.ApplicationScope
+import com.muhrifqii.apps.AppInitializer
+import com.muhrifqii.injects.ApplicationScope
 import me.tatarka.inject.annotations.IntoSet
 import me.tatarka.inject.annotations.Provides
 

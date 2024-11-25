@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<resources>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="ok">Okay</string>
+    <string name="cancel">Cancel</string>
+    <string name="name">Name</string>
+    <string name="amount">Amount</string>
+    <string name="balance">Balance</string>
+    <string name="currency">Currency</string>
+    <string name="type">Type</string>
+    <string name="account">Account</string>
+    <string name="asset">Asset</string>
+    <string name="configure">Configure</string>
+    <string name="cash">Cash</string>
+    <string name="saving">Saving</string>
+    <string name="setting">Setting</string>
+    <string name="notification">Notification</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+</resources>

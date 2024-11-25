@@ -16,7 +16,7 @@ okhttp = "4.12.0"
 kermit = "1.2.3" # Pinned back as Store uses Kermit 1.x
 ktlint = "1.0.1"
 ktor = "2.3.12"
-paging-multiplatform = "3.2.0-alpha05-0.2.3"
+paging = "3.3.4"
 spotless = "6.25.0"
 sqldelight = "2.0.2"
 nsException = "0.1.10"
@@ -39,8 +39,7 @@ androidx-composePreview-android = {module = "androidx.compose.ui:ui-tooling-prev
 androidx-composePreview-desktop = {module = "androidx.compose.ui:ui-tooling-preview-desktop", version.ref = "compose-ui"}
 compose-preview = { module = "org.jetbrains.compose.ui:ui-tooling-preview", version.ref = "compose-multiplatform" }
 
-paging-common = { module = "app.cash.paging:paging-common", version.ref = "paging-multiplatform" }
-paging-compose = { module = "app.cash.paging:paging-compose-common", version.ref = "paging-multiplatform" }
+paging-common = { module = "androidx.paging:paging-common", version.ref = "paging" }
 
 androidx-profileinstaller = "androidx.profileinstaller:profileinstaller:1.4.1"
 
@@ -130,6 +129,7 @@ compose-gradlePlugin = { module = "org.jetbrains.compose:compose-gradle-plugin",
 runner = { group = "com.android.support.test", name = "runner", version.ref = "runner" }
 espresso-core = { group = "com.android.support.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
 appcompat-v7 = { group = "com.android.support", name = "appcompat-v7", version.ref = "appcompatV7" }
+composeCompiler-gradlePlugin = { module = "org.jetbrains.kotlin:compose-compiler-gradle-plugin", version.ref = "kotlin" }
 #licensee-gradlePlugin = { module = "app.cash.licensee:licensee-gradle-plugin", version.ref = "licensee" }
 
 [plugins]

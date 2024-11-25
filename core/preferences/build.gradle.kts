@@ -10,6 +10,7 @@ kotlin {
                 implementation(projects.core.base)
                 api(libs.multiplatformsettings.core)
                 api(libs.multiplatformsettings.coroutines)
+                api(libs.kotlinx.datetime)
             }
         }
 

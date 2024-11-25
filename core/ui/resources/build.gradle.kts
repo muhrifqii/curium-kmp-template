@@ -39,7 +39,7 @@ kotlin {
 }
 
 android {
-    namespace = "com.muhrifqii.core.ui.resources"
+    namespace = "com.muhrifqii. .resources"
 
     sourceSets["main"].apply {
         res.srcDirs("src/androidMain/res")
@@ -48,5 +48,5 @@ android {
 
 compose.resources {
     publicResClass = true
-    packageOfResClass = "com.muhrifqii.ui.resources"
+    packageOfResClass = "com.muhrifqii.resources"
 }

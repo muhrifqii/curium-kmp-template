@@ -6,4 +6,6 @@ data class ApplicationInfo(
     val flavor: ApplicationBuildFlavor,
     val versionName: String,
     val versionCode: Long,
+    val cachePath: () -> String,
+    val platform: ApplicationBuildPlatform,
 )

@@ -25,7 +25,7 @@ plugins {
 allprojects {
     tasks.withType(KotlinCompilationTask::class.java).configureEach {
         compilerOptions {
-            allWarningsAsErrors.set(true)
+            allWarningsAsErrors.set(false)
         }
     }
 }

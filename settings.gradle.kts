@@ -47,6 +47,7 @@ enableFeaturePreview("STABLE_CONFIGURATION_CACHE")
 
 rootProject.name = "curium-kmp-template"
 include(
+    ":core:analytics",
     ":core:base:",
     ":core:logger:api",
     ":core:logger:service",
@@ -54,5 +55,8 @@ include(
     ":core:preferences",
     ":core:ui:compose",
     ":core:ui:resources",
+    ":feature:main",
+    ":di:common",
+    ":di:default",
     ":android-app:app",
 )

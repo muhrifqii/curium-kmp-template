@@ -1,0 +1,3 @@
+package com.muhrifqii.inject
+
+actual interface FeaturedPlatformApplicationComponent

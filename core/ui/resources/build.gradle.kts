@@ -39,7 +39,7 @@ kotlin {
 }
 
 android {
-    namespace = "com.muhrifqii. .resources"
+    namespace = "com.muhrifqii.resources"
 
     sourceSets["main"].apply {
         res.srcDirs("src/androidMain/res")

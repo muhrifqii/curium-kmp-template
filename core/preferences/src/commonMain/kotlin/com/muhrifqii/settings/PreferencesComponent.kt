@@ -8,5 +8,5 @@ interface PreferencesComponent : PreferencesPlatformComponent {
 
     @ApplicationScope
     @Provides
-    fun providePreferences(bind: AppPreferences): AppPreferences = bind
+    fun providePreferences(bind: AppPreferenceImpl): AppPreferences = bind
 }

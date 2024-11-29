@@ -43,6 +43,8 @@ dependencies {
     implementation(libs.androidx.splashscreen)
 //    implementation(libs.leakCanary)
     implementation(libs.kotlin.coroutines.android)
+
+    implementation(project.dependencies.platform(libs.google.firebase.bom))
     implementation(libs.google.firebase.crashlytics)
 
     androidTestImplementation(libs.androidx.uiautomator)

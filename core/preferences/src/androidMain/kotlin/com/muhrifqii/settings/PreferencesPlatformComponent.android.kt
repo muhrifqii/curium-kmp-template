@@ -14,6 +14,9 @@ actual interface PreferencesPlatformComponent {
     fun provideSettings(delegate: AppSharedPreferences): ObservableSettings
             = SharedPreferencesSettings(delegate)
 
+    @Suppress("DEPRECATION")
+    @ApplicationScope
+    @Provides
     fun provideAppPreferences(
         context: Application
     ): AppSharedPreferences = PreferenceManager.getDefaultSharedPreferences(context)

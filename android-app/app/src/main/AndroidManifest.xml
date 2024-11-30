@@ -7,7 +7,30 @@
     <application
             android:name=".App"
             android:allowBackup="true"
-            android:label="Curium KMP App">
+            android:icon="@mipmap/ic_launcher"
+            android:label="Curium KMP App"
+            android:roundIcon="@mipmap/ic_launcher_round">
 
+        <activity
+                android:name=".MainActivity"
+                android:exported="true"
+                android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                        android:host="curium"
+                        android:scheme="${applicationId}" />
+
+            </intent-filter>
+        </activity>
     </application>
 </manifest>

@@ -13,7 +13,7 @@ class CrashReportingInitializer(
     private val enabler: CrashLogReportingEnabler,
 ) : AppInitializer {
     override fun init() {
-        enabler(true)
+        enabler(false)
     }
 }
 

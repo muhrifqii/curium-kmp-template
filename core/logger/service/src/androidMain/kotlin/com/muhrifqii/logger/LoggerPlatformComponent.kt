@@ -10,8 +10,11 @@ actual interface LoggerPlatformComponent {
     @ApplicationScope
     fun bindCrashLogReportingEnabler(): CrashLogReportingEnabler =
         CrashLogReportingEnabler {
+            if (!it) {
+                return@CrashLogReportingEnabler
+            }
             tryWith(FirebaseCrashlytics.getInstance()) {
-                setCrashlyticsCollectionEnabled(it)
+                isCrashlyticsCollectionEnabled = it
             }
         }
 }

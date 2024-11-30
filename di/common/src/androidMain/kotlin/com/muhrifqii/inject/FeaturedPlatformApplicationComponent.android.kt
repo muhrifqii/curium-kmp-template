@@ -7,9 +7,13 @@ import com.muhrifqii.apps.ApplicationBuildFlavor
 import com.muhrifqii.apps.ApplicationBuildPlatform
 import com.muhrifqii.apps.ApplicationInfo
 import com.muhrifqii.injects.ApplicationScope
+import com.muhrifqii.notifications.PendingNotificationStore
 import me.tatarka.inject.annotations.Provides
 
 actual interface FeaturedPlatformApplicationComponent {
+
+    val pendingNotificationStore: PendingNotificationStore
+
     @ApplicationScope
     @Provides
     fun provideApplicationInfo(
@@ -19,6 +23,7 @@ actual interface FeaturedPlatformApplicationComponent {
         val packageManager = application.packageManager
         val applicationInfo = packageManager.getApplicationInfo(application.packageName, 0)
         val packageInfo = packageManager.getPackageInfo(application.packageName, 0)
+        @Suppress("DEPRECATION")
         val versionCode = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
             packageInfo.longVersionCode
         } else {

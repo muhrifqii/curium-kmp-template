@@ -55,6 +55,8 @@ include(
     ":core:preferences",
     ":core:ui:compose",
     ":core:ui:resources",
+    ":data:entities",
+    ":data:protobuf",
     ":feature:main",
     ":di:common",
     ":di:default",

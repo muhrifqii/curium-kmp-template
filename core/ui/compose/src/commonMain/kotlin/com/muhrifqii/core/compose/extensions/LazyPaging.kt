@@ -1,3 +1,4 @@
+@file:Suppress("NOTHING_TO_INLINE")
 package com.muhrifqii.core.compose.extensions
 
 import androidx.paging.CombinedLoadStates

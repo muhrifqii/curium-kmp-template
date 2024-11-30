@@ -12,6 +12,7 @@ data class LogCompositionsCounterRef(var count: Int)
  * https://www.jetpackcompose.app/articles/how-can-I-debug-recompositions-in-jetpack-compose
  */
 @Composable
+@Suppress("NOTHING_TO_INLINE")
 inline fun LogCompositions(tag: String, msg: String) {
     if (ENABLE_LOG_COMPOSITIONS) {
         val ref = remember { LogCompositionsCounterRef(0) }

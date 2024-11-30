@@ -1,30 +1,31 @@
 package com.muhrifqii.logger
 
+import io.github.aakira.napier.LogLevel
 import io.github.aakira.napier.Napier
 
-internal object NapierLogger : Logger {
-
-    override fun v(t: Throwable?, message: () -> String) {
-        Napier.v(throwable = t, message = message)
-    }
-
-    override fun d(t: Throwable?, message: () -> String) {
-        Napier.d(throwable = t, message = message)
-    }
-
-    override fun i(t: Throwable?, message: () -> String) {
-        Napier.i(throwable = t, message = message)
-    }
-
-    override fun w(t: Throwable?, message: () -> String) {
-        Napier.w(throwable = t, message = message)
-    }
-
-    override fun e(t: Throwable?, message: () -> String) {
-        Napier.e(throwable = t, message = message)
-    }
-
-    override fun wtf(t: Throwable?, message: () -> String) {
-        Napier.wtf(throwable = t, message = message)
+object NapierLogger : Logger {
+    override fun log(
+        priority: Logger.LogLevel,
+        tag: String?,
+        throwable: Throwable?,
+        message: String
+    ) {
+        Napier.log(
+            priority = priority.toNapier(),
+            tag = tag,
+            throwable = throwable,
+            message = message
+        )
     }
 }
+
+private val napierLogLevel: Map<Logger.LogLevel, LogLevel> = mapOf(
+    Logger.LogLevel.ASSERT to LogLevel.ASSERT,
+    Logger.LogLevel.DEBUG to LogLevel.DEBUG,
+    Logger.LogLevel.VERBOSE to LogLevel.VERBOSE,
+    Logger.LogLevel.INFO to LogLevel.INFO,
+    Logger.LogLevel.WARN to LogLevel.WARNING,
+    Logger.LogLevel.ERROR to LogLevel.ERROR,
+)
+
+internal fun Logger.LogLevel.toNapier(): LogLevel = napierLogLevel[this]!!

@@ -72,6 +72,6 @@ class KotlinMultiplatformPlugin : Plugin<Project> {
             }
 
         }
-        configureSpotless()
+//        configureSpotless()
     }
 }

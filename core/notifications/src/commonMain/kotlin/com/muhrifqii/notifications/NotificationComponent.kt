@@ -1,0 +1,3 @@
+package com.muhrifqii.notifications
+
+interface NotificationComponent : NotificationPlatformComponent

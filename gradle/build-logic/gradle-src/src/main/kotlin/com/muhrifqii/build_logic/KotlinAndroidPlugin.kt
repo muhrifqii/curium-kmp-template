@@ -11,6 +11,6 @@ class KotlinAndroidPlugin : Plugin<Project> {
             apply("org.jetbrains.kotlin.android")
         }
         configureJavaToolchain()
-        configureSpotless()
+//        configureSpotless()
     }
 }

@@ -9,6 +9,7 @@ kotlin {
             dependencies {
                 api(projects.core.base)
                 implementation(projects.core.ui.resources)
+                implementation(projects.core.logger.api)
                 api(libs.kotlinx.datetime)
             }
         }
@@ -16,6 +17,9 @@ kotlin {
         androidMain {
             dependencies {
                 implementation(libs.androidx.core)
+                implementation(libs.androidx.datastore)
+                implementation(projects.data.protobuf)
+                implementation(projects.core.logger.service)
             }
         }
     }

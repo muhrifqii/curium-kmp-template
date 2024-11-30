@@ -6,6 +6,6 @@ import org.gradle.api.Project
 
 class RootPlugin : Plugin<Project> {
     override fun apply(target: Project) = with(target) {
-        configureSpotless()
+//        configureSpotless()
     }
 }

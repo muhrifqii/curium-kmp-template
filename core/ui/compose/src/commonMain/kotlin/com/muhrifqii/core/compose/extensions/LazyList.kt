@@ -1,3 +1,4 @@
+@file:Suppress("NOTHING_TO_INLINE")
 package com.muhrifqii.core.compose.extensions
 
 import androidx.compose.foundation.layout.Spacer
@@ -10,7 +11,6 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.Dp
 import com.muhrifqii.core.compose.Layout
-
 inline fun LazyListScope.itemSpacer(height: Dp) {
     item {
         Spacer(

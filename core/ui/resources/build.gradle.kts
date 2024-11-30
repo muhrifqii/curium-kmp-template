@@ -10,7 +10,7 @@ kotlin {
         commonMain {
             dependencies {
                 api(compose.ui)
-                api(projects.core.base)
+                api(projects.data.entities)
                 api(compose.components.resources)
                 implementation(compose.runtime)
             }

@@ -1,5 +1,6 @@
 package com.muhrifqii.curium
 
+import android.content.Context
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -7,6 +8,10 @@ import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.coroutineScope
 import androidx.lifecycle.repeatOnLifecycle
+import com.muhrifqii.inject.ActivityComponent
+import com.muhrifqii.inject.AndroidApplicationComponent
+import com.muhrifqii.inject.create
+import com.slack.circuit.backstack.rememberSaveableBackStack
 import kotlinx.coroutines.launch
 
 class MainActivity : ComponentActivity() {
@@ -14,8 +19,11 @@ class MainActivity : ComponentActivity() {
         installSplashScreen()
         super.onCreate(savedInstanceState)
 
-        setContent {
-        }
+        val appComponent = AndroidApplicationComponent.from(this)
+        val component = ActivityComponent.create(this, appComponent)
     }
 
 }
+
+private fun AndroidApplicationComponent.Companion.from(context: Context): AndroidApplicationComponent =
+    (context.applicationContext as App).component

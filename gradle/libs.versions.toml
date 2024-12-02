@@ -26,6 +26,7 @@ runner = "1.0.2"
 espressoCore = "3.0.2"
 appcompatV7 = "28.0.0"
 wire = "5.1.0"
+moko-permissions = "0.18.1"
 
 [libraries]
 androidx-activity-activity = { module = "androidx.activity:activity", version.ref = "androidxactivity" }
@@ -118,6 +119,8 @@ sqldelight-sqlite = { module = "app.cash.sqldelight:sqlite-driver", version.ref 
 sqldelight-coroutines = { module = "app.cash.sqldelight:coroutines-extensions", version.ref = "sqldelight" }
 sqldelight-paging = { module = "app.cash.sqldelight:androidx-paging3-extensions", version.ref = "sqldelight" }
 sqldelight-primitive = { module = "app.cash.sqldelight:primitive-adapters", version.ref = "sqldelight" }
+
+moko-permissions-core = { module = "dev.icerock.moko:permissions", version.ref = "moko-permissions" }
 
 assertk = "com.willowtreeapps.assertk:assertk:0.28.1"
 turbine = "app.cash.turbine:turbine:1.2.0"

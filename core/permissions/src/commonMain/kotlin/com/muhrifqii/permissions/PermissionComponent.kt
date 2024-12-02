@@ -1,0 +1,5 @@
+package com.muhrifqii.permissions
+
+expect interface PermissionPlatformComponent
+
+interface PermissionComponent : PermissionPlatformComponent

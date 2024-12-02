@@ -16,9 +16,12 @@ kotlin {
                 api(projects.core.logger.api)
                 api(projects.core.logger.service)
                 api(projects.core.notifications)
+                api(projects.core.permissions)
                 api(projects.core.preferences)
                 api(projects.core.ui.compose)
                 api(projects.core.ui.resources)
+
+                api(projects.feature.main)
             }
         }
     }

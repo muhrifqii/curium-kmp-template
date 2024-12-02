@@ -11,6 +11,7 @@ import androidx.lifecycle.repeatOnLifecycle
 import com.muhrifqii.inject.ActivityComponent
 import com.muhrifqii.inject.AndroidApplicationComponent
 import com.muhrifqii.inject.create
+import com.muhrifqii.permissions.bind
 import com.slack.circuit.backstack.rememberSaveableBackStack
 import kotlinx.coroutines.launch
 
@@ -21,6 +22,11 @@ class MainActivity : ComponentActivity() {
 
         val appComponent = AndroidApplicationComponent.from(this)
         val component = ActivityComponent.create(this, appComponent)
+
+        component.permissionManager.bind(this)
+
+        setContent {
+        }
     }
 
 }

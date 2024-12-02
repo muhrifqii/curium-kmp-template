@@ -5,6 +5,7 @@ import com.muhrifqii.injects.ApplicationCoroutineScope
 import com.muhrifqii.injects.ApplicationScope
 import com.muhrifqii.logger.LoggerComponent
 import com.muhrifqii.notifications.NotificationComponent
+import com.muhrifqii.permissions.PermissionComponent
 import com.muhrifqii.settings.PreferencesComponent
 import com.muhrifqii.utils.AppCoroutineDispatchers
 import kotlinx.coroutines.CoroutineScope
@@ -18,6 +19,7 @@ interface FeaturedApplicationComponent :
     AnalyticsComponent,
     LoggerComponent,
     NotificationComponent,
+    PermissionComponent,
     PreferencesComponent {
 
     val initializers: AppInitializerSet

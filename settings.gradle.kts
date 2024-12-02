@@ -52,6 +52,7 @@ include(
     ":core:logger:api",
     ":core:logger:service",
     ":core:notifications",
+    ":core:permissions",
     ":core:preferences",
     ":core:ui:compose",
     ":core:ui:resources",
